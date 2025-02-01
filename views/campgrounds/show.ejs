@@ -9,7 +9,9 @@
     <h1><%= k.title %></h1>
     <h4><%= k.location %></h4>
     <footer>
+        <a href="/campgrounds/<%=k._id%>/edit">Edit</a>
         <a href="/campgrounds">Back</a>
+        <form action="/campgrounds/<%=k._id%>?_method=DELETE" method="POST"><button>Delete</button></form>
     </footer>
 </body>
 </html>
